@@ -1,0 +1,67 @@
+byte kalp[8] = {B00000,
+                B00000,
+                B01010,
+                B10101,
+                B01010,
+                B00100,
+                B00000};
+#include <LiquidCrystal.h>
+
+int seconds = 0;
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup()
+{
+  lcd.begin(16, 2); 
+  lcd.createChar(1,kalp);
+}
+
+void loop()
+{
+  lcd.setCursor(0,0);
+  lcd.print("u");
+  delay(750);
+    lcd.clear();
+
+  lcd.print("ou");
+  delay(750);
+    lcd.clear();
+  lcd.print("you");
+  delay(750);
+  lcd.clear();
+  lcd.print(" you");
+  delay(750);
+  lcd.clear();
+
+  lcd.print("e you");
+  delay(750);
+    lcd.clear();
+
+  lcd.print("ve you");
+  delay(750);
+    lcd.clear();
+  lcd.print("ove you");
+  delay(750);
+    lcd.clear();
+  
+  lcd.print("love you");
+  delay(750);
+    lcd.clear();
+  lcd.print(" love you");
+  delay(750);
+  lcd.clear();
+  
+  lcd.print("I love you");
+  delay(750);
+  lcd.setCursor(5,1);
+  lcd.write(byte(1));
+  delay(300);
+  for(int a=0;a<=20;a++)
+  {
+    lcd.scrollDisplayRight();
+    delay(300);
+  }
+  delay(1000);
+  lcd.clear();
+}

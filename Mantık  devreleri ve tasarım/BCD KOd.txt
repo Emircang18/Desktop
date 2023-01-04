@@ -1,0 +1,9 @@
+Öncelikle bcd ye dönüştürmek için gerekli işlemleri bir fonksiyon halinde def ile tutuyoruz
+Bu işlemler şıu şekilde gerçekleşiyor:
+eğer sayı sıfır a eşitse "0000" yazdırıyoruz.
+eğer sayı 0 dan büyükse sayının tersini alıyoruz.
+Sayının tersini alma sebebimiz gördüğü şekliyle yazdırabilmemiz için.
+daha sonrasında tersin sıfırdan büyük olması durumunda
+tersin modunu yani basamaklarını tek tek bcd formatına dönüştürüp yazdırıyoruz.
+İstediğmiz sayıları def fonksiyonunun dışında isteyip Bcd fonksiyonuna gönderip bu adımları tekrarlatıyoruz.
+Ve bu şekilde sayıların bcd hallerini buldurabiliyoruz.

@@ -1,0 +1,15 @@
+Graf Teorisi
+Graf Ve Tanımlar
+Bir grafı tanımlamak için önncelikle düğümlerin ve ayrıtların kümesini tanımlamak gerekir.
+Daha sonra hangi ayrıtların hangi düğümlere bağladığı belirtilmelidir. 
+Bir ayrıt her iki ucunda da bir düğüm olacak şekilde tanımlandığından grafdaki tüm ayrıtların uç noktalarınnı
+bir düğüm ile ilişkilendirmek gerekir bu nedenle her bir 'e' ayrıtı için {v1,v2} kümesi tanımlarız bunun anlamı 'e' ayrıtının V1 ve V2 düğümlerini bağladığıdır.
+V1 = V2 olabilir {v1,v2} kümesi J(e) ile gösterilir ve düğümler kümesinin bir alt kümesidir.
+
+
+G1=(V1,E1)
+V1={t1,t2,t3}
+E1={e1,e2}
+[{t1,t3},{t2}],
+[{t2},{t3,t1}],
+[{t3},{t1}]
